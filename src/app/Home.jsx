@@ -1,12 +1,9 @@
 import React from 'react';
-import { ProductsRepository } from '../api';
 import { Madlib } from './Madlib';
 import { MadlibForm } from './MadlibForm';
 
 
 export class Home extends React.Component {
-
-  productsRepository = new ProductsRepository();
 
   state = {
     answers: [''],

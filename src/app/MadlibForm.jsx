@@ -1,11 +1,8 @@
 import React from 'react';
-import { ProductsRepository } from '../api';
 import { Redirect } from 'react-router-dom';
 
 export class MadlibForm extends React.Component {
   
-  productsRepository = new ProductsRepository();
-
   state = {
     word1: '',
     word2: '',
