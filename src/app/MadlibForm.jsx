@@ -45,7 +45,7 @@ export class MadlibForm extends React.Component {
               </div>
               <div className="d-flex">
                 <div className="form-group user-name-container">
-                  <label htmlFor="word2">adjective</label>
+                  <label htmlFor="word2">verb</label>
                   <input
                     type="text"
                     className="form-control"
@@ -73,7 +73,7 @@ export class MadlibForm extends React.Component {
 
               <div className="d-flex">
                 <div className="form-group user-name-container">
-                  <label htmlFor="word4">adjective</label>
+                  <label htmlFor="word4">noun</label>
                   <input
                     type="text"
                     className="form-control"
@@ -87,7 +87,7 @@ export class MadlibForm extends React.Component {
 
               <div className="d-flex">
                 <div className="form-group user-name-container">
-                  <label htmlFor="word5">adjective</label>
+                  <label htmlFor="word5">verb</label>
                   <input
                     type="text"
                     className="form-control"

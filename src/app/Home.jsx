@@ -10,14 +10,7 @@ export class Home extends React.Component {
 
   state = {
     answers: [''],
-    madlib: [
-      'Our office cabinets have really ',
-      ' food. Just thinking about it makes my stomach ',
-      '. The snacks are ',
-      ' and tastes like ',
-      '. One day, I swear one of my meatballs started to ',
-      '!'
-    ]
+    madlib: ['']
   }
 
   render() {
@@ -31,10 +24,6 @@ export class Home extends React.Component {
               </li>
             </ol>
           </nav>
-          <div className="container p-5 bg-light">
-            <div className="d-flex">
-            </div>
-          </div>
           <MadlibForm handleClick={this.handleClick.bind(this)}/>
           <Madlib madlib={ this.state.madlib } answers={ this.state.answers }/>
         </div>
@@ -43,7 +32,17 @@ export class Home extends React.Component {
   }
 
   handleClick(event, answers) {
-    this.setState({ answers: answers });
+    this.setState({ 
+      answers: answers,
+      madlib: [
+        'Our office cabinets have really ',
+        ' food. Just thinking about it makes my stomach ',
+        '. The snacks are ',
+        ' and tastes like ',
+        '. One day, I swear one of my meatballs started to ',
+        '!'
+      ]
+     });
     event.preventDefault();
   };
 
